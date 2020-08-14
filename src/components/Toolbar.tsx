@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Tab } from "../types/Tab";
-import { L18n } from "..";
 import { classNames, ClassValue } from "../util/ClassNames";
 import { ToolbarButtonGroup } from "./ToolbarButtonGroup";
 import { ToolbarButton } from "./ToolbarButton";
 import { ButtonChildProps } from "../child-props";
+import { L18n } from "../types/L18n";
 
 export interface ToolbarButtonData {
   commandName: string;

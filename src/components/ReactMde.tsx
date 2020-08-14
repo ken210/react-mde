@@ -13,7 +13,6 @@ import {
   getDefaultCommandMap,
   getDefaultToolbarCommands
 } from "../commands/default-commands/defaults";
-import { Classes, L18n } from "..";
 import { enL18n } from "../l18n/react-mde.en";
 import { SvgIcon } from "../icons";
 import { classNames } from "../util/ClassNames";
@@ -23,6 +22,8 @@ import { Refs } from "../refs";
 import { ButtonHTMLAttributes, TextareaHTMLAttributes } from "react";
 import { ComponentSimilarTo } from "../util/type-utils";
 import { GripSvg } from "./grip-svg";
+import { L18n } from "../types/L18n";
+import { Classes } from "../classes";
 
 export interface ReactMdeProps {
   value: string;

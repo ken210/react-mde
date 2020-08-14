@@ -6,11 +6,12 @@ import {
   PasteOptions,
   Selection
 } from "../types";
-import { getDefaultCommandMap, L18n, TextApi, TextState } from "..";
 import { insertText } from "../util/InsertTextAtPosition";
 import { extractKeyActivatedCommands } from "./command-utils";
 import * as React from "react";
-import { getDefaultSaveImageCommandName } from "./default-commands/defaults";
+import { getDefaultSaveImageCommandName, getDefaultCommandMap } from "./default-commands/defaults";
+import { TextApi, TextState } from "../types/CommandOptions";
+import { L18n } from "../types/L18n";
 
 export class TextAreaTextApi implements TextApi {
   textAreaRef: React.RefObject<HTMLTextAreaElement>;

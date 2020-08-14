@@ -1,6 +1,7 @@
 import * as React from "react";
-import { L18n, TextApi, TextState } from "..";
 import { HandleKeyCommand } from "../types";
+import { TextState, TextApi } from "../types/CommandOptions";
+import { L18n } from "../types/L18n";
 
 export type GetIcon = (iconName: string) => React.ReactNode;
 
